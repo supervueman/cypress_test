@@ -1,3 +1,4 @@
 {
-  "baseUrl": "http://example.cypress.io/"
+  "baseUrl": "http://example.cypress.io/",
+  "projectId": "a7bq2k"
 }
