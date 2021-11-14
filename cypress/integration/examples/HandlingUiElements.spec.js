@@ -24,4 +24,10 @@ describe('Suite Name', () => {
     cy.get('.ui-corner-all').contains('English').click()
     cy.get('.ui-corner-all').contains('Japanese').click()
   })
+
+  it('Select countries searchable dropdown', () => {
+    cy.get('[role=combobox]').click({force: true})
+    cy.get('.select2-search__field').type('Ind')
+    cy.get('.select2-search__field').type('{enter}')
+  })
 })
