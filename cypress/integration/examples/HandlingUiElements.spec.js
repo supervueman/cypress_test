@@ -18,4 +18,10 @@ describe('Suite Name', () => {
   it('Skills Dropdown', () => {
     cy.get('#Skills').select('Android').should('have.value', 'Android')
   })
+
+  it('Languages Multi Select', () => {
+    cy.get('#msdd').click()
+    cy.get('.ui-corner-all').contains('English').click()
+    cy.get('.ui-corner-all').contains('Japanese').click()
+  })
 })
